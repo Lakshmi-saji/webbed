@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diet Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Diet Planner</h1>
+
+  <form id="mealForm">
+    <input type="text" id="mealName" placeholder="Meal Name" required>
+    <select id="mealType">
+      <option>Breakfast</option>
+      <option>Lunch</option>
+      <option>Dinner</option>
+      <option>Snack</option>
+    </select>
+    <input type="number" id="calories" placeholder="Calories" required>
+    <input type="date" id="mealDate" required>
+    <input type="file" id="mealImage" accept="image/*">
+    <textarea id="mealDesc" placeholder="Description"></textarea>
+    <button type="submit">Add Meal</button>
+  </form>
+
+  <h2>My Meals</h2>
+  <div id="mealList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
